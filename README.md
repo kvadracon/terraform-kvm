@@ -12,5 +12,21 @@ terraform-project/
 ├── main.tf
 ├── outputs.tf
 ├── network.tf
-├── terraform.tfstate
+├── terraform.tfvars
+```
+
+File terraform.tfvars contains variable values:
+
+```
+ssh-remote-user = ""
+
+kvm-remote-host = ""
+
+remote-port = ""
+```
+
+Initializing the local backend and provider plugins:
+
+```bash
+    $ terraform init
 ```
